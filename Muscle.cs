@@ -12,9 +12,9 @@ namespace PlanYourHeist2
 
         public void PerformSkill(bank Bank)
         {
-            bank.AlarmScore -= SkillLevel
+            bank.SecurityGuardScore -= SkillLevel
             Console.WriteLine($"{Name} is fighting with the securiy guards! It is decreased by {SkillLevel} points!");
-            if (bank.AlarmScore <= 0)
+            if (bank.SecurityGuardScore <= 0)
             {
                 Console.WriteLine($"{Name} has defeated the security guards!");
             }
